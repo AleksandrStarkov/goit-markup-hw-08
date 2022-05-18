@@ -1,0 +1,49 @@
+.inform {
+  margin-top: 20px;
+  margin-bottom: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.inform-block {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inform-block li {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1200px) {
+  .inform-block {
+    display: block;
+  }
+}
+
+.inform-cont {
+  text-decoration: none;
+  color: var(--bckgr-body-color);
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-focus-color);
+  }
+}
+
+.inform-cont-gr {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation);
+
+  &:hover,
+  &:focus {
+    color: var(--logo-focus-color);
+  }
+}

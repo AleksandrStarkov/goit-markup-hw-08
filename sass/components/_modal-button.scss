@@ -1,0 +1,23 @@
+.modal-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+
+  &:hover {
+    .modal-button-icon,
+    .modal-button-icon {
+      fill: var(--logo-focus-color);
+    }
+  }
+
+  .modal-button-icon {
+    width: 11px;
+    height: 11px;
+    transition: fill var(--animation);
+  }
+}

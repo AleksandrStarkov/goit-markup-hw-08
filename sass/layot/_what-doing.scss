@@ -1,0 +1,52 @@
+.picture {
+  display: none;
+  padding-bottom: 94px;
+}
+
+@media screen and (min-width: 1200px) {
+  .picture {
+    display: block;
+  }
+}
+.picture-desc {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+.picture-img {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.picture-pic img {
+  display: block;
+}
+
+.picture-pic {
+  position: relative;
+}
+
+.picture-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 27px 0;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--bckgr-body-color);
+  background: rgba(47, 48, 58, 0.8);
+}

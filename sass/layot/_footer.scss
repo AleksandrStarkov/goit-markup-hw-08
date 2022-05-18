@@ -1,0 +1,39 @@
+.f-adress {
+  background-color: var(--bckgr-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.adress-cont {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .f-adress .conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .f-adress .conteiner {
+    display: flex;
+    align-items: baseline;
+  }
+  .adress-cont {
+    align-items: flex-start;
+  }
+}
+
+.f-adress .logo {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--bckgr-body-color);
+}

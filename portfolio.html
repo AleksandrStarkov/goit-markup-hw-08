@@ -22,7 +22,7 @@
     <!-- Header -->
 
     <header class="header">
-      <div class="conteiner">
+      <div class="conteiner head-button">
         <nav class="navigation">
           <a href="./index.html" class="logo"
             ><span class="logo-log">Web</span>Studio</a
@@ -40,18 +40,40 @@
           <li>
             <a href="mailto:info@devstudio.com" class="contact mail">
               <svg class="nav-mail" width="16" height="12">
-                <use href="./imeges/icon/symbol-defs.svg#mail"></use></svg
-              >info@devstudio.com</a
+                <use href="./images/icon/symbol-defs.svg#mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li>
             <a href="tel:380961111111" class="contact telephone">
               <svg class="nav-mail" width="10" height="16">
-                <use href="./imeges/icon/symbol-defs.svg#telephone"></use></svg
-              >+38 096 111 11 11</a
+                <use href="./images/icon/symbol-defs.svg#telephone"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="mob menu">
+            <use
+              class="icon-menu"
+              href="./images/icon/symbol-defs.svg#menu-mob"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/icon/symbol-defs.svg#close-mob"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu" id="menu" data-menu>conteiner</div>
       </div>
     </header>
 
@@ -63,7 +85,7 @@
 
         <!-- Botton -->
 
-        <div class="conteiner">
+        <div class="conteiner btn-panel">
           <ul class="button-panel">
             <li>
               <button class="button-secondary" type="button">Все</button>
@@ -90,7 +112,19 @@
             <li>
               <a href="">
                 <div class="photo-block">
-                  <img src="imeges/img-1.jpg" alt="Технокряк" width="370" />
+                  <img
+                    srcset="
+                      ./images/tablet/tab1x1.jpg 354w,
+                      ./images/desktop/img-1.jpg 370w,
+                      ./images/mobile/img1x1.jpg      450w,
+                      ./images/tablet/tab2x1.jpg 708w,
+                      ./images/desktop/img-2x1.jpg 740w,
+                      ./images/mobile/img2x1.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x1.jpg"
+                    alt="Технокряк"
+                  />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -107,9 +141,17 @@
               <a href="">
                 <div class="photo-block">
                   <img
-                    src="imeges/img-2.jpg"
+                    srcset="
+                      ./images/tablet/tab1x2.jpg 354w,
+                      ./images/desktop/img-2.jpg 370w,
+                      ./images/mobile/img1x2.jpg      450w,
+                      ./images/tablet/tab2x2.jpg 708w,
+                      ./images/desktop/img-2x2.jpg 740w,
+                      ./images/mobile/img2x2.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x2.jpg"
                     alt="Постер New Orlean vs Golden Star"
-                    width="370"
                   />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -127,9 +169,17 @@
               <a href="">
                 <div class="photo-block">
                   <img
-                    src="imeges/img-3.jpg"
+                    srcset="
+                      ./images/tablet/tab1x3.jpg 354w,
+                      ./images/desktop/img-3.jpg 370w,
+                      ./images/mobile/img1x3.jpg      450w,
+                      ./images/tablet/tab2x3.jpg 708w,
+                      ./images/desktop/img-2x3.jpg 740w,
+                      ./images/mobile/img2x3.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x3.jpg"
                     alt="Ресторан Seafood"
-                    width="370"
                   />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -146,7 +196,19 @@
             <li>
               <a href="">
                 <div class="photo-block">
-                  <img src="imeges/img-4.jpg" alt="Проект Prime" width="370" />
+                  <img
+                    srcset="
+                      ./images/tablet/tab1x4.jpg 354w,
+                      ./images/desktop/img-4.jpg 370w,
+                      ./images/mobile/img1x4.jpg      450w,
+                      ./images/tablet/tab2x4.jpg 708w,
+                      ./images/desktop/img-2x4.jpg 740w,
+                      ./images/mobile/img2x4.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x4.jpg"
+                    alt="Проект Prime"
+                  />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -162,7 +224,19 @@
             <li>
               <a href="">
                 <div class="photo-block">
-                  <img src="imeges/img-5.jpg" alt="Проект Boxes" width="370" />
+                  <img
+                    srcset="
+                      ./images/tablet/tab1x5.jpg 354w,
+                      ./images/desktop/img-5.jpg 370w,
+                      ./images/mobile/img1x5.jpg      450w,
+                      ./images/tablet/tab2x5.jpg 708w,
+                      ./images/desktop/img-2x5.jpg 740w,
+                      ./images/mobile/img2x5.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x5.jpg"
+                    alt="Проект Boxes"
+                  />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -179,9 +253,17 @@
               <a href="">
                 <div class="photo-block">
                   <img
-                    src="imeges/img-6.jpg"
+                    srcset="
+                      ./images/tablet/tab1x6.jpg 354w,
+                      ./images/desktop/img-6.jpg 370w,
+                      ./images/mobile/img1x6.jpg      450w,
+                      ./images/tablet/tab2x6.jpg 708w,
+                      ./images/desktop/img-2x6.jpg 740w,
+                      ./images/mobile/img2x6.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x6.jpg"
                     alt="Inspiration has no Borders"
-                    width="370"
                   />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -199,9 +281,17 @@
               <a href="">
                 <div class="photo-block">
                   <img
-                    src="imeges/img-7.jpg"
+                    srcset="
+                      ./images/tablet/tab1x7.jpg 354w,
+                      ./images/desktop/img-7.jpg 370w,
+                      ./images/mobile/img1x7.jpg      450w,
+                      ./images/tablet/tab2x7.jpg 708w,
+                      ./images/desktop/img-2x7.jpg 740w,
+                      ./images/mobile/img2x7.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x7.jpg"
                     alt="Издание Limited Edition"
-                    width="370"
                   />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -218,7 +308,19 @@
             <li>
               <a href="">
                 <div class="photo-block">
-                  <img src="imeges/img-8.jpg" alt="Проект LAB" width="370" />
+                  <img
+                    srcset="
+                      ./images/tablet/tab1x8.jpg 354w,
+                      ./images/desktop/img-8.jpg 370w,
+                      ./images/mobile/img1x8.jpg      450w,
+                      ./images/tablet/tab2x8.jpg 708w,
+                      ./images/desktop/img-2x8.jpg 740w,
+                      ./images/mobile/img2x8.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x8.jpg"
+                    alt="Проект LAB"
+                  />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -235,9 +337,17 @@
               <a href="">
                 <div class="photo-block">
                   <img
-                    src="imeges/img-9.jpg"
+                    srcset="
+                      ./images/tablet/tab1x9.jpg 354w,
+                      ./images/desktop/img-9.jpg 370w,
+                      ./images/mobile/img1x9.jpg      450w,
+                      ./images/tablet/tab2x9.jpg 708w,
+                      ./images/desktop/img-2x9.jpg 740w,
+                      ./images/mobile/img2x9.jpg 900
+                    "
+                    sizes="(min-width: 1200px) 370px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                    src="images/mobile/img1x9.jpg"
                     alt="Growing Business"
-                    width="370"
                   />
                   <p class="photo-window">
                     Ресурс предлагает комплексные предложения с разным уровнем
@@ -290,28 +400,28 @@
             <li>
               <a href="#" class="button">
                 <svg class="button-instagram">
-                  <use href="./imeges/icon/symbol-defs.svg#instagram"></use>
+                  <use href="./images/icon/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button">
                 <svg class="button-twitter">
-                  <use href="./imeges/icon/symbol-defs.svg#twitter"></use>
+                  <use href="./images/icon/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button">
                 <svg class="button-facebook">
-                  <use href="./imeges/icon/symbol-defs.svg#facebook"></use>
+                  <use href="./images/icon/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button">
                 <svg class="button-linkedin">
-                  <use href="./imeges/icon/symbol-defs.svg#linkedin"></use>
+                  <use href="./images/icon/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -330,14 +440,12 @@
               />
             </label>
 
-            <div class="footer-icon-wrap">
-              <button type="submit" class="footer-button-sub">
-                Подписаться
-              </button>
+            <button type="submit" class="footer-button-sub">
+              Подписаться
               <svg class="footer-icon" width="24" height="24">
-                <use href="./imeges/icon/symbol-defs.svg#telegram"></use>
+                <use href="./images/icon/symbol-defs.svg#telegram"></use>
               </svg>
-            </div>
+            </button>
           </span>
         </form>
       </div>

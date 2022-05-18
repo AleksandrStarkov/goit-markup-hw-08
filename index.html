@@ -22,7 +22,7 @@
     <!-- Header -->
 
     <header class="header">
-      <div class="conteiner">
+      <div class="conteiner head-button">
         <nav class="navigation">
           <a href="./index.html" class="logo"
             ><span class="logo-log">Web</span>Studio</a
@@ -38,7 +38,7 @@
           <li>
             <a href="mailto:info@devstudio.com" class="contact mail">
               <svg class="nav-mail" width="16" height="12">
-                <use href="./imeges/icon/symbol-defs.svg#mail"></use>
+                <use href="./images/icon/symbol-defs.svg#mail"></use>
               </svg>
               info@devstudio.com</a
             >
@@ -46,12 +46,32 @@
           <li>
             <a href="tel:380961111111" class="contact telephone">
               <svg class="nav-mail" width="10" height="16">
-                <use href="./imeges/icon/symbol-defs.svg#telephone"></use>
+                <use href="./images/icon/symbol-defs.svg#telephone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+        <button
+          type="button"
+          class="menu-button is-open"
+          aria-expanded="false"
+          aria-controls="menu"
+          data-menu-button
+        >
+          <svg width="40" height="40" aria-label="mob menu">
+            <use
+              class="icon-menu"
+              href="./images/icon/symbol-defs.svg#menu-mob"
+            ></use>
+            <use
+              class="icon-close"
+              href="./images/icon/symbol-defs.svg#close-mob"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="menu" id="menu" data-menu>conteiner</div>
       </div>
     </header>
 
@@ -61,7 +81,7 @@
       <!-- top panel -->
 
       <section class="panel">
-        <h1 class="heading">Эффективные решения для вашего бизнеса</h1>
+        <h1 class="panel__head">Эффективные решения для вашего бизнеса</h1>
         <button class="button-primary" type="button" data-modal-open>
           Заказать услугу
         </button>
@@ -72,7 +92,7 @@
 
             <button class="modal-button" type="button" data-modal-close>
               <svg class="modal-button-icon">
-                <use href="./imeges/icon/symbol-defs.svg#vector"></use>
+                <use href="./images/icon/symbol-defs.svg#vector"></use>
               </svg>
             </button>
 
@@ -86,7 +106,7 @@
                   <svg class="form__icon" width="18" height="18">
                     <use
                       class="form__pic"
-                      href="./imeges/icon/symbol-defs.svg#person"
+                      href="./images/icon/symbol-defs.svg#person"
                     ></use>
                   </svg>
                 </span>
@@ -100,7 +120,7 @@
                   <svg class="form__icon" width="18" height="18">
                     <use
                       class="form__pic"
-                      href="./imeges/icon/symbol-defs.svg#phone"
+                      href="./images/icon/symbol-defs.svg#phone"
                     ></use>
                   </svg>
                 </span>
@@ -114,7 +134,7 @@
                   <svg class="form__icon" width="18" height="18">
                     <use
                       class="form__pic"
-                      href="./imeges/icon/symbol-defs.svg#email"
+                      href="./images/icon/symbol-defs.svg#email"
                     ></use>
                   </svg>
                 </span>
@@ -245,9 +265,17 @@
             <li>
               <img
                 class="photo-prof"
-                src="imeges/Igor.jpg"
+                srcset="
+                  ./images/desktop/Igordesk1x.jpg 270w,
+                  ./images/tablet/imgp1x1.jpg     354w,
+                  ./images/mobile/mob1x1.jpg      450w,
+                  ./images/desktop/Igordesk2x.jpg 540w,
+                  ./images/tablet/imgp2x1.jpg     708w,
+                  ./images/mobile/mob2x1.jpg      900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./images/mobile/mob1x1.jpg"
                 alt="photo Igor"
-                width="270"
               />
               <div class="comand-prof">
                 <h3 class="comand user">Игорь Демьяненко</h3>
@@ -257,7 +285,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-instagram">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#instagram"
+                          href="./images/icon/symbol-defs.svg#instagram"
                         ></use>
                       </svg>
                     </a>
@@ -265,7 +293,7 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="photo-twitter">
-                        <use href="./imeges/icon/symbol-defs.svg#twitter"></use>
+                        <use href="./images/icon/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -273,7 +301,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-facebook">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#facebook"
+                          href="./images/icon/symbol-defs.svg#facebook"
                         ></use>
                       </svg>
                     </a>
@@ -282,7 +310,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-linkedin">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#linkedin"
+                          href="./images/icon/symbol-defs.svg#linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -293,9 +321,17 @@
             <li>
               <img
                 class="photo-prof"
-                src="imeges/Olga.jpg"
+                srcset="
+                  ./images/desktop/Olgadesk1x.jpg 270w,
+                  ./images/tablet/imgp1x2.jpg     354w,
+                  ./images/mobile/mob1x2.jpg      450w,
+                  ./images/desktop/Olgadesk2x.jpg 540w,
+                  ./images/tablet/imgp2x2.jpg     708w,
+                  ./images/mobile/mob2x2.jpg      900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./images/mobile/mob1x2.jpg"
                 alt="photo Olga"
-                width="270"
               />
               <div class="comand-prof">
                 <h3 class="comand user">Ольга Репина</h3>
@@ -305,7 +341,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-instagram">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#instagram"
+                          href="./images/icon/symbol-defs.svg#instagram"
                         ></use>
                       </svg>
                     </a>
@@ -313,7 +349,7 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="photo-twitter">
-                        <use href="./imeges/icon/symbol-defs.svg#twitter"></use>
+                        <use href="./images/icon/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -321,7 +357,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-facebook">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#facebook"
+                          href="./images/icon/symbol-defs.svg#facebook"
                         ></use>
                       </svg>
                     </a>
@@ -330,7 +366,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-linkedin">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#linkedin"
+                          href="./images/icon/symbol-defs.svg#linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -341,9 +377,17 @@
             <li>
               <img
                 class="photo-prof"
-                src="imeges/Nikolai.jpg"
+                srcset="
+                  ./images/desktop/Nikolaidesk1x.jpg 270w,
+                  ./images/tablet/imgp1x3.jpg        354w,
+                  ./images/mobile/mob1x3.jpg         450w,
+                  ./images/desktop/Nikolaidesk2x.jpg 540w,
+                  ./images/tablet/imgp2x3.jpg        708w,
+                  ./images/mobile/mob2x3.jpg         900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
+                src="./images/mobile/mob1x3.jpg"
                 alt="photo Nikolai"
-                width="270"
               />
               <div class="comand-prof">
                 <h3 class="comand user">Николай Тарасов</h3>
@@ -353,7 +397,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-instagram">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#instagram"
+                          href="./images/icon/symbol-defs.svg#instagram"
                         ></use>
                       </svg>
                     </a>
@@ -361,7 +405,7 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="photo-twitter">
-                        <use href="./imeges/icon/symbol-defs.svg#twitter"></use>
+                        <use href="./images/icon/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -369,7 +413,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-facebook">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#facebook"
+                          href="./images/icon/symbol-defs.svg#facebook"
                         ></use>
                       </svg>
                     </a>
@@ -378,7 +422,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-linkedin">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#linkedin"
+                          href="./images/icon/symbol-defs.svg#linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -389,9 +433,16 @@
             <li>
               <img
                 class="photo-prof"
-                src="imeges/Mihail.jpg"
+                srcset="
+                  ./images/desktop/Mihaildesk1x.jpg 270w,
+                  ./images/tablet/imgp1x4.jpg       354w,
+                  ./images/mobile/mob1x4.jpg        450w,
+                  ./images/desktop/Mihaildesk2x.jpg 540w,
+                  ./images/tablet/imgp2x4.jpg       708w,
+                  ./images/mobile/mob2x4.jpg        900w
+                "
+                sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (max-width: 480px) 450px"
                 alt="photo Mihail"
-                width="270"
               />
               <div class="comand-prof">
                 <h3 class="comand user">Михаил Ермаков</h3>
@@ -401,7 +452,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-instagram">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#instagram"
+                          href="./images/icon/symbol-defs.svg#instagram"
                         ></use>
                       </svg>
                     </a>
@@ -409,7 +460,7 @@
                   <li>
                     <a href="#" class="button-icon">
                       <svg class="photo-twitter">
-                        <use href="./imeges/icon/symbol-defs.svg#twitter"></use>
+                        <use href="./images/icon/symbol-defs.svg#twitter"></use>
                       </svg>
                     </a>
                   </li>
@@ -417,7 +468,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-facebook">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#facebook"
+                          href="./images/icon/symbol-defs.svg#facebook"
                         ></use>
                       </svg>
                     </a>
@@ -426,7 +477,7 @@
                     <a href="#" class="button-icon">
                       <svg class="photo-linkedin">
                         <use
-                          href="./imeges/icon/symbol-defs.svg#linkedin"
+                          href="./images/icon/symbol-defs.svg#linkedin"
                         ></use>
                       </svg>
                     </a>
@@ -452,7 +503,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./imeges/icon/symbol-defs.svg#group"></use>
+                  <use href="./images/icon/symbol-defs.svg#group"></use>
                 </svg>
               </a>
             </li>
@@ -464,7 +515,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./imeges/icon/symbol-defs.svg#group2"></use>
+                  <use href="./images/icon/symbol-defs.svg#group2"></use>
                 </svg>
               </a>
             </li>
@@ -476,7 +527,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./imeges/icon/symbol-defs.svg#group3"></use>
+                  <use href="./images/icon/symbol-defs.svg#group3"></use>
                 </svg>
               </a>
             </li>
@@ -488,7 +539,7 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./imeges/icon/symbol-defs.svg#group4"></use>
+                  <use href="./images/icon/symbol-defs.svg#group4"></use>
                 </svg>
               </a>
             </li>
@@ -500,14 +551,14 @@
                 class="button-user"
               >
                 <svg class="button-group">
-                  <use href="./imeges/icon/symbol-defs.svg#group5"></use>
+                  <use href="./images/icon/symbol-defs.svg#group5"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button-user">
                 <svg class="button-group">
-                  <use href="./imeges/icon/symbol-defs.svg#group6"></use>
+                  <use href="./images/icon/symbol-defs.svg#group6"></use>
                 </svg>
               </a>
             </li>
@@ -552,28 +603,28 @@
             <li>
               <a href="#" class="button">
                 <svg class="button-instagram">
-                  <use href="./imeges/icon/symbol-defs.svg#instagram"></use>
+                  <use href="./images/icon/symbol-defs.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button">
                 <svg class="button-twitter">
-                  <use href="./imeges/icon/symbol-defs.svg#twitter"></use>
+                  <use href="./images/icon/symbol-defs.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button">
                 <svg class="button-facebook">
-                  <use href="./imeges/icon/symbol-defs.svg#facebook"></use>
+                  <use href="./images/icon/symbol-defs.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
               <a href="#" class="button">
                 <svg class="button-linkedin">
-                  <use href="./imeges/icon/symbol-defs.svg#linkedin"></use>
+                  <use href="./images/icon/symbol-defs.svg#linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -592,19 +643,18 @@
               />
             </label>
 
-            <div class="footer-icon-wrap">
-              <button type="submit" class="footer-button-sub">
-                Подписаться
-              </button>
+            <button type="submit" class="footer-button-sub">
+              Подписаться
               <svg class="footer-icon" width="24" height="24">
-                <use href="./imeges/icon/symbol-defs.svg#telegram"></use>
+                <use href="./images/icon/symbol-defs.svg#telegram"></use>
               </svg>
-            </div>
+            </button>
           </span>
         </form>
       </div>
     </footer>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
