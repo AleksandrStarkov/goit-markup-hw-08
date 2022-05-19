@@ -25,7 +25,7 @@
   margin-bottom: -30px;
 }
 .deteil-block li {
-  width: 450px;
+  max-width: 450px;
   margin-bottom: 30px;
 }
 
@@ -62,7 +62,6 @@
   content: '';
   display: block;
   height: 120px;
-  background-size: contein;
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f5f4fa;

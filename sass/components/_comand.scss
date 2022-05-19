@@ -24,6 +24,7 @@
   display: block;
   margin: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 .comand-block li {
@@ -36,7 +37,7 @@
 
 @media screen and (min-width: 480px) {
   .photo-prof {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
