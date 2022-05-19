@@ -12,3 +12,9 @@
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+  }
+}

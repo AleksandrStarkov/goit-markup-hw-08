@@ -24,6 +24,15 @@
   .inform-block {
     display: block;
   }
+  .inform {
+    margin-bottom: 0;
+  }
+  .inform-block li {
+    margin-bottom: 0;
+  }
+  .inform-block li + li {
+    margin-top: 8px;
+  }
 }
 
 .inform-cont {

@@ -56,7 +56,7 @@
         </ul>
         <button
           type="button"
-          class="menu-button is-open"
+          class="menu-button"
           aria-expanded="false"
           aria-controls="menu"
           data-menu-button
@@ -88,25 +88,30 @@
             <li><a class="menu__list-link" href="Контакты">Контакты</a></li>
           </ul>
 
-          <ul class="menu__contact">
-            <li>
-              <a href="tel:380961111111" class="menu__contact-item menu__item">
-                +38 096 111 11 11</a
-              >
-            </li>
-            <li>
-              <a href="mailto:info@devstudio.com" class="menu__contact-item">
-                info@devstudio.com</a
-              >
-            </li>
-          </ul>
+          <div class="menu__content">
+            <ul class="menu__contact">
+              <li>
+                <a
+                  href="tel:380961111111"
+                  class="menu__contact-item menu__item"
+                >
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="menu__contact-item">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
 
-          <ul class="menu__social">
-            <li><a class="menu__social-link" href="#">Instagram</a></li>
-            <li><a class="menu__social-link" href="#">Twitter</a></li>
-            <li><a class="menu__social-link" href="#">Facebook</a></li>
-            <li><a class="menu__social-link" href="#">LinkedIn</a></li>
-          </ul>
+            <ul class="menu__social">
+              <li><a class="menu__social-link" href="#">Instagram</a></li>
+              <li><a class="menu__social-link" href="#">Twitter</a></li>
+              <li><a class="menu__social-link" href="#">Facebook</a></li>
+              <li><a class="menu__social-link" href="#">LinkedIn</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -484,6 +489,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
   </body>

@@ -6,7 +6,7 @@
 
 .comand-log {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;
@@ -65,6 +65,11 @@
     justify-content: space-between;
     margin: 0;
     padding: 0;
+  }
+  .comand-log {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 
