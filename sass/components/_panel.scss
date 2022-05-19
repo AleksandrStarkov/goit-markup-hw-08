@@ -13,7 +13,7 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/mobile/overmob1x.jpg');
+    url('../images/mobile/overmob1x.jpg');
   background-repeat: no-repeat;
   &__head {
     margin: 0;
@@ -41,7 +41,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/tablet/header1x.jpg');
+      url('../images/tablet/header1x.jpg');
   }
 }
 
@@ -56,7 +56,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url('/images/desktop/overlay1x.jpg');
+      url('../images/desktop/overlay1x.jpg');
 
     &__head {
       width: 696px;
